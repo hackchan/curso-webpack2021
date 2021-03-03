@@ -1,4 +1,6 @@
-import suma from './utils/sum'
-const hello = 'hello'
-console.log(hello)
-console.log(suma(5, 3))
+import { Template } from './templates/templateLogin.js'
+;(async function App() {
+  const plantilla = await Template()
+  const main = document.getElementById('main')
+  main.innerHTML = plantilla
+})()
